@@ -28,6 +28,6 @@
   };
 </script>
 
-<FeedbackForm {feedback} on:add-feedback={addFeedback} />
+<FeedbackForm on:add-feedback={addFeedback} />
 <FeedbackStats {count} {average} />
 <FeedbackList {feedback} on:delete-feedback={deleteFeedback} />

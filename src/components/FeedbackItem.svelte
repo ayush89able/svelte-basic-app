@@ -2,19 +2,14 @@
     import { createEventDispatcher } from "svelte";
     import Card from "./Card.svelte";
 
-    type Item = {
-        text: string;
-        rating: number;
-        id: string;
-    }
-    export let item: Item = {
+    export let item = {
         text: '',
         rating: 0,
         id: ''
     };
     const dispatch = createEventDispatcher();
 
-    function handleDelete(id: string) : void {
+    function handleDelete(id) {
         dispatch("delete-feedback", id);
     }
 </script>

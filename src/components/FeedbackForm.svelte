@@ -1,12 +1,10 @@
 <script>
     import { v4 as uuidv4 } from "uuid";
     import { createEventDispatcher } from "svelte";
-    export let feedback = [];
     let text = "";
     let rating = 0;
     const dispatch = createEventDispatcher();
 
-    $: console.log("feedback", feedback);
     const handleInput = (e) => {
         text = e.target.value;
     };
@@ -36,7 +34,7 @@
         placeholder="Give us some rating "
     />
     <div>
-        <button on:click={(e) => handleSend}>Send</button>
+        <button on:click={handleSend}>Send</button>
     </div>
 </div>
 

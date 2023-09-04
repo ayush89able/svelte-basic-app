@@ -1,4 +1,4 @@
-<script>
+<script lang='ts'>
   import FeedbackList from "./components/FeedbackList.svelte";
   import FeedbackStats from "./components/FeedbackStats.svelte";
   import FeedbackForm from "./components/FeedbackForm.svelte";
@@ -6,7 +6,7 @@
     {
       id: "bf589b75-265b-4bb9-842d-74e2f511238f",
       rating: 10,
-      text: "Awsome and best",
+      text: "Awesome and best",
     },
     {
       id: "8c3dd65f-7339-4013-9ff9-64955cce03cd",

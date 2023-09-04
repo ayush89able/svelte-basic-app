@@ -36,7 +36,7 @@
         placeholder="Give us some rating "
     />
     <div>
-        <button on:click={handleSend}>Send</button>
+        <button on:click={(e) => handleSend}>Send</button>
     </div>
 </div>
 

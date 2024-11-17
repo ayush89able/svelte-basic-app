@@ -2,6 +2,7 @@
   import FeedbackList from "./components/FeedbackList.svelte";
   import FeedbackStats from "./components/FeedbackStats.svelte";
   import FeedbackForm from "./components/FeedbackForm.svelte";
+  import logger from './common/utils/logger'
   let feedback = [
     {
       id: "bf589b75-265b-4bb9-842d-74e2f511238f",
@@ -15,6 +16,7 @@
     },
   ];
 
+  logger.info('feedback', feedback)
   $: count = feedback.length;
   $: average = feedback.reduce((acc, { rating }) => acc + rating, 0) / count;
 
